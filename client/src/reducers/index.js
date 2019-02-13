@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import ads from './ads'
+import ads from './AdsFetched'
 
 export default combineReducers({
-  ads: ads
+  ads
 })
