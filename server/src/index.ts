@@ -1,12 +1,13 @@
 import 'reflect-metadata'
-import {createKoaServer} from "routing-controllers"
+import { createKoaServer } from "routing-controllers"
 import AdController from "./ads/controller"
 import setupDb from './db'
 
 const port = process.env.PORT || 4000
 
 const app = createKoaServer({
-   controllers: [AdController]
+  cors: true,
+  controllers: [AdController]
 })
 
 setupDb()
