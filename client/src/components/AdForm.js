@@ -29,7 +29,7 @@ export default function AdForm(props) {
     <br></br>
     <label>
       Phonenr:
-      <input type="text" name="phone" onChange={props.onChange} value={props.values.phonenr} />
+      <input type="text" name="phonenr" onChange={props.onChange} value={props.values.phonenr} />
     </label>
     <br></br>
     <button type="submit">Add</button>
