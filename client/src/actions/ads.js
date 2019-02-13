@@ -1,6 +1,6 @@
 import request from 'superagent'
 export const ADS_FETCHED = 'ADS_FETCHED'
-export const AD_FETCHED = 'AD_FETCHED'
+export const AD_CREATED = 'AD_CREATED'
 
 
 const baseUrl = 'http://localhost:4000'
@@ -10,8 +10,8 @@ const adsFetched = ads => ({
   ads
 })
 
-const adFetched = ad => ({
-  type: AD_FETCHED,
+const adCreateSuccess = ad => ({
+  type: AD_CREATED,
   ad
 })
 
@@ -19,18 +19,18 @@ export const loadAds = () => (dispatch, getState) => {
   if (getState.ads) return 
   request(`${baseUrl}/ads`)
     .then(response => {
+      console.log(response.body.ads)
       dispatch(adsFetched(response.body.ads))
     })
     .catch(console.error)
 }
 
-export const loadAd = (id) => (dispatch, getState) => {
-  const state = getState().ad
-  if (state && state.id === id) return
-  
-  request(`${baseUrl}/ads/${id}`)
+export const createAd = (data) => dispatch => {
+  request
+    .post(`${baseUrl}/ads`)
+    .send(data)
     .then(response => {
-      dispatch(adFetched(response.body.ads))
+      dispatch(adCreateSuccess(response.body))
     })
     .catch(console.error)
 }
