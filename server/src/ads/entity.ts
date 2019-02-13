@@ -11,18 +11,18 @@ export default class Ad extends BaseEntity {
   @Column('text')
   title: string
 
-  // @Column('text')
-  // description: string
+  @Column('text')
+  description: string
 
-  // @Column('text')
-  // picture: string
+  @Column('text')
+  picture: string
 
-  // @Column('intgr')
-  // price: number
+  @Column('text')
+  price: string
 
-  // @Column('text')
-  // email: string
+  @Column('text')
+  email: string
 
-  // @Column('intgr')
-  // phonenr: number
+  @Column('text')
+  phonenr: string
 }
