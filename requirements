@@ -1,0 +1,6 @@
+Knowing how to setup back end and front end projects from scratch
+Solidify all the theory that we've learned in the last weeks
+Simulate a real-world assignment with less guidance
+
+Build a simple buy-and-sell app that utilizes a REST API in the back end and React+Redux in the front end.
+When faced with an assignment in the real-world you need a bit more to work with. What should it do and what should it not do, and what do we even mean by 'buy-and-sell' and what do we mean by 'app'? Make sure to gather more requirements before you start working.
