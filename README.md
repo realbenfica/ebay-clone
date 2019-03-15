@@ -11,9 +11,6 @@ For more info why I am doing this checkout: **[Goals for this project](#goals-fo
 - **[Technologies used](#technologies-used)**
 - **[Goals for this project](#goals-for-this-project)**
 - **[Requirements briefing](#requirements)**
-- **[Features built so far overview with pull requests](#features-built-so-far-overview-with-pull-requests)**
-- **[My git workflow](#my-git-workflow)**
-- **[My agile workflow and trello board](#my-agile-workflow-and-trello-board)**
 - **[create-react-app-docs](#create-react-app)**
 
 ## Technologies used
